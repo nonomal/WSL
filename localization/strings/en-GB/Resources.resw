@@ -181,7 +181,7 @@ Install using 'wsl.exe {} &lt;Distro&gt;'.
   <data name="MessageExportFailed" xml:space="preserve">
     <value>Exporting the distribution failed.</value>
   </data>
-  <data name="MessageFsUpdgadeNeeded" xml:space="preserve">
+  <data name="MessageFsUpgradeNeeded" xml:space="preserve">
     <value>Performing one-time upgrade of the Windows Subsystem for Linux file system for this distribution...</value>
   </data>
   <data name="MessageHigherIntegrity" xml:space="preserve">
@@ -787,6 +787,10 @@ For information please visit https://aka.ms/wslinstall</value>
   <data name="MessageWarningDuringStartup" xml:space="preserve">
     <value>Errors occurred during WSL startup</value>
   </data>
+  <data name="MessageSystemdUserSessionFailed" xml:space="preserve">
+    <value>Failed to start the systemd user session for '{}'. See journalctl for more details.</value>
+    <comment>{FixedPlaceholder="{}"}Command line arguments, file names and string inserts should not be translated</comment>
+  </data>
   <data name="MessageOpenEventViewer" xml:space="preserve">
     <value>Open EventViewer</value>
   </data>
@@ -813,7 +817,7 @@ For information please visit https://aka.ms/wslinstall</value>
     <value>Legacy distribution registrations do not support the --version argument.</value>
     <comment>{Locked="--version "}Command line arguments, file names and string inserts should not be translated</comment>
   </data>
-  <data name="MessageDistributionOverriden" xml:space="preserve">
+  <data name="MessageDistributionOverridden" xml:space="preserve">
     <value>The distribution "{}" is provided by an override manifest.</value>
     <comment>{FixedPlaceholder="{}"}Command line arguments, file names and string inserts should not be translated</comment>
   </data>
@@ -923,7 +927,7 @@ Falling back to NAT networking.</value>
     <value>The plug-in '{}' requires a newer version of WSL. Please run: wsl.exe --update</value>
     <comment>{FixedPlaceholder="{}"}{Locked="--update"}Command line arguments, file names and string inserts should not be translated</comment>
   </data>
-  <data name="MessageSettingOverridenByPolicy" xml:space="preserve">
+  <data name="MessageSettingOverriddenByPolicy" xml:space="preserve">
     <value>The .wslconfig setting '{}' is disabled by the computer policy.</value>
     <comment>{FixedPlaceholder="{}"}{Locked=".wslconfig"}Command line arguments, file names and string inserts should not be translated</comment>
   </data>
@@ -1212,7 +1216,7 @@ See recovery instructions on: https://aka.ms/wsldiskmountrecovery</value>
   </data>
   <data name="Settings_CustomSystemDistroPathDescription.Text" xml:space="preserve">
     <value>Specify a path to a VHD which will load as a custom system distro, primarily used to power GUI apps in WSL. [Learn more about system distros here].</value>
-    <comment>{Locked="["}{Locked="]"}The text in between the delimiters [ ] is made into an hyperlink in code, and the delimiters are removed</comment>
+    <comment>{Locked="["}{Locked="]"}The text in between the delimiters [ ] is made into a hyperlink in code, and the delimiters are removed</comment>
   </data>
   <data name="Settings_CustomSystemDistroPathDescription.NavigateUri" xml:space="preserve">
     <value>https://aka.ms/wslgsystemdistro</value>

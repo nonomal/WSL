@@ -93,7 +93,6 @@ public:
     InteropServer(InteropServer&& other) noexcept :
         m_InteropSocketPath(std::move(other.m_InteropSocketPath)), m_InteropSocket(std::move(other.m_InteropSocket))
     {
-        memset(&other.m_InteropSocketPath, 0, sizeof(other.m_InteropSocketPath));
     }
 
     int Create();
@@ -172,7 +171,7 @@ Return Value:
 
     if (ChildPid < 0)
     {
-        LOG_ERROR("{} failed {}", CloneFlags ? "clone" : "fork", errno);
+        LOG_ERROR("{} for {} failed {}", CloneFlags ? "clone" : "fork", ChildName, errno);
         return -1;
     }
     else if (ChildPid > 0)
